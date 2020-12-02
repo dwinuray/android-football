@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.dwinuray.bottom_navigation_view.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/standingsFragment"
+        android:name="com.dwinuray.bottom_navigation_view.StandingsFragment"
+        android:label="Standings"
+        tools:layout="@layout/fragment_standings" />
+    <fragment
+        android:id="@+id/scorersFragment"
+        android:name="com.dwinuray.bottom_navigation_view.ScorersFragment"
+        android:label="Scorers"
+        tools:layout="@layout/fragment_scorers" />
+</navigation>
